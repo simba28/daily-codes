@@ -21,7 +21,8 @@ def insertLevelOrder(arr, root, i, n):
 
 
 if __name__ == '__main__':
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    arr = [1, 0, 2]
     n = len(arr)
     root = None
     root = insertLevelOrder(arr, root, 0, n)
+    print(root)
