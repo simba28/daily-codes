@@ -1,1 +1,0 @@
-trim A Binary Search Tree
