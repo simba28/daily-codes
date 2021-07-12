@@ -8,17 +8,11 @@ def createSuffixArray(string):
     j = 1
     arr = [0]
     while j < len(string):
-        appendZero = True
         if string[j] != string[i]:
-            while i > 0:
+            if i > 0:
                 i = arr[i-1]
-                if string[i] == string[j]:
-                    arr.append(i+1)
-                    appendZero = False
-            if appendZero:      
-                arr.append(0)
-            else:
-                i += 1
+                continue
+            arr.append(0)
             j += 1
         else:
             arr.append(i+1)
